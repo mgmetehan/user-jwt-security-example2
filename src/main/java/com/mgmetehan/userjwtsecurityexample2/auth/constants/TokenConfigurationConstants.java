@@ -19,7 +19,7 @@ public final class TokenConfigurationConstants {
             yYRAUjCXpex5r/xP39tJ09y+la5adWdPA9dFWAxs+5Gl+MWfzx0JkP98n+KJbTPm
             pwIDAQAB
             -----END PUBLIC KEY-----
-            """);//online rsa key generator
+                        """);//online rsa key generator
     public static final PrivateKey PRIVATE_KEY = KeyConverter.convertPrivateKey("""
             -----BEGIN PRIVATE KEY-----
             MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDUr83QSqen6qZq
