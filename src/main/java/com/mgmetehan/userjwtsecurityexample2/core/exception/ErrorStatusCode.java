@@ -10,7 +10,9 @@ public enum ErrorStatusCode {
     NOT_FOUND(10000, "Not Found", false, HttpStatus.NO_CONTENT),
     UNAUTHORIZED(10001, "Unauthorized", false, HttpStatus.UNAUTHORIZED),
     TOKEN_ALREADY_INVALIDATED(10002, "Token Already Invalidated", false, HttpStatus.INTERNAL_SERVER_ERROR),
-    ALREADY_EXIST(10003, "%s", false, HttpStatus.INTERNAL_SERVER_ERROR);
+    ALREADY_EXIST(10003, "%s", false, HttpStatus.INTERNAL_SERVER_ERROR),
+    USER_NOT_FOUND(10004, "Can't find with given email: %s", false, HttpStatus.NOT_FOUND),
+    PASSWORD_NOT_VALID(10005, "Password Not Valid!", false, HttpStatus.INTERNAL_SERVER_ERROR);
 
     private final int value;
     private final String description;
