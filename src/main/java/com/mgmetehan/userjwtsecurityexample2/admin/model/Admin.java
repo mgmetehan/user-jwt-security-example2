@@ -1,4 +1,4 @@
-package com.mgmetehan.userjwtsecurityexample2.user.model;
+package com.mgmetehan.userjwtsecurityexample2.admin.model;
 
 import com.mgmetehan.userjwtsecurityexample2.auth.model.type.TokenClaims;
 import com.mgmetehan.userjwtsecurityexample2.auth.model.type.UserStatus;
@@ -25,9 +25,9 @@ import java.util.Map;
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "CASE_USER")
+@Table(name = "CASE_ADMIN")
 @Entity
-public class User extends BaseEntity {
+public class Admin extends BaseEntity {
 
     @Column(name = "EMAIL")
     private String email;
@@ -41,12 +41,12 @@ public class User extends BaseEntity {
     @Column(name = "LAST_NAME")
     private String lastName;
 
-    @Column(name = "PHONE_NUMBER",length = 20)
+    @Column(name = "PHONE_NUMBER", length = 20)
     private String phoneNumber;
 
     @Builder.Default
     @Enumerated(EnumType.STRING)
-    private UserType userType = UserType.USER;
+    private UserType userType = UserType.ADMIN;
 
     @Builder.Default
     @Enumerated(EnumType.STRING)
@@ -55,7 +55,7 @@ public class User extends BaseEntity {
     public Map<String, Object> getClaims() {
         final Map<String, Object> claims = new HashMap<>();
 
-        claims.put(TokenClaims.USER_ID.getValue(), this.getId());//todo !
+        claims.put(TokenClaims.USER_ID.getValue(), this.getId()); //todo !
         claims.put(TokenClaims.USER_TYPE.getValue(), this.userType);
         claims.put(TokenClaims.USER_STATUS.getValue(), this.userStatus);
         claims.put(TokenClaims.USER_FIRST_NAME.getValue(), this.firstName);

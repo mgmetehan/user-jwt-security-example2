@@ -20,7 +20,7 @@ public class UserRegisterService {
 
     public ResponseUserRegisterDTO registerUser(UserRegisterRequestDTO userRegisterRequest) {
         if (userRepository.existsUserByEmail(userRegisterRequest.getEmail())) {
-            throw new GeneralException(ErrorStatusCode.ALREADY_EXIST, "The email is already used for another admin : " + userRegisterRequest.getEmail());
+            throw new GeneralException(ErrorStatusCode.ALREADY_EXIST, "The email is already used for another user : " + userRegisterRequest.getEmail());
         }
 
         final User userEntityToBeSave = UserConverter.toEntity(userRegisterRequest);
