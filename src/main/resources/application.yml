@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-jwt-security-example2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/custom_jwt
+    username: postgres
+    password: toor
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+token-config:
+  issuer: "issuer"
+  access-token-expire-minute: 30
+  refresh-token-expire-day: 1
+  public-key: |
+    -----BEGIN PUBLIC KEY-----
+    Wq0a6bpcnoOWJxTi2exwnecW3r1X1PjeUvsDogy7RYjhlxU0G+1r38gPWfUW2FNd
+    -----END PUBLIC KEY-----
+  private-key: |
+    -----BEGIN PRIVATE KEY-----
+    BgzRvkaaxcEDOsgu9bn485Kri7W82XNLB0t74BnpucLBBWuq8yf8jslP7j6VjwGw
+    -----END PRIVATE KEY-----
