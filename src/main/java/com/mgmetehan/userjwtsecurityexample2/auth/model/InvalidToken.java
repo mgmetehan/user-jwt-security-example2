@@ -1,6 +1,6 @@
 package com.mgmetehan.userjwtsecurityexample2.auth.model;
 
-import com.mgmetehan.userjwtsecurityexample2.core.model.BaseEntity;
+import com.mgmetehan.userjwtsecurityexample2.core.entity.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

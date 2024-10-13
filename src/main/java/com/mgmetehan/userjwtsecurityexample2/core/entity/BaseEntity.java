@@ -1,4 +1,4 @@
-package com.mgmetehan.userjwtsecurityexample2.core.model;
+package com.mgmetehan.userjwtsecurityexample2.core.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;

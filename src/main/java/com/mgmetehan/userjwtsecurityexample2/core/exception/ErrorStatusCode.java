@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 public enum ErrorStatusCode {
     NOT_FOUND(10000, "Not Found", false, HttpStatus.NO_CONTENT),
     UNAUTHORIZED(10001, "Unauthorized", false, HttpStatus.UNAUTHORIZED),
-    TOKEN_ALREADY_INVALIDATED(10001, "Token Already Invalidated", false, HttpStatus.INTERNAL_SERVER_ERROR);
+    TOKEN_ALREADY_INVALIDATED(10002, "Token Already Invalidated", false, HttpStatus.INTERNAL_SERVER_ERROR),
+    ALREADY_EXIST(10003, "%s", false, HttpStatus.INTERNAL_SERVER_ERROR);
 
     private final int value;
     private final String description;
