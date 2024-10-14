@@ -1,4 +1,4 @@
-package com.mgmetehan.userjwtsecurityexample2.service;
+package com.mgmetehan.userjwtsecurityexample2.admin.service;
 
 import com.mgmetehan.userjwtsecurityexample2.admin.converter.AdminConverter;
 import com.mgmetehan.userjwtsecurityexample2.admin.dto.request.AdminRegisterRequestDTO;
