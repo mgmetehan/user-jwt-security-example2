@@ -1,5 +1,6 @@
-package com.mgmetehan.userjwtsecurityexample2.user.dto.response;
+package com.mgmetehan.userjwtsecurityexample2.common.dto.request;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -9,10 +10,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class ResponseTokenDTO {
-    private String accessToken;
-    private Long accessTokenExpiresAt;
+@NoArgsConstructor
+public class TokenRefreshRequestDTO {
+    @NotBlank
     private String refreshToken;
 }

@@ -2,11 +2,11 @@ package com.mgmetehan.userjwtsecurityexample2.user.controller;
 
 
 import com.mgmetehan.userjwtsecurityexample2.core.model.response.CustomResponse;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.request.LoginRequestDTO;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.request.TokenInvalidateRequestDTO;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.request.TokenRefreshRequestDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.request.LoginRequestDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.request.TokenInvalidateRequestDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.request.TokenRefreshRequestDTO;
 import com.mgmetehan.userjwtsecurityexample2.user.dto.request.UserRegisterRequestDTO;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.response.ResponseTokenDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.response.ResponseTokenDTO;
 import com.mgmetehan.userjwtsecurityexample2.user.service.UserLoginService;
 import com.mgmetehan.userjwtsecurityexample2.user.service.UserLogoutService;
 import com.mgmetehan.userjwtsecurityexample2.user.service.UserRefreshTokenService;

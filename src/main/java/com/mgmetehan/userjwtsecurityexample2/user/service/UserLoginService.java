@@ -1,12 +1,11 @@
 package com.mgmetehan.userjwtsecurityexample2.user.service;
 
-import com.mgmetehan.userjwtsecurityexample2.auth.model.Token;
 import com.mgmetehan.userjwtsecurityexample2.auth.service.TokenService;
 import com.mgmetehan.userjwtsecurityexample2.core.exception.ErrorStatusCode;
 import com.mgmetehan.userjwtsecurityexample2.core.exception.GeneralException;
-import com.mgmetehan.userjwtsecurityexample2.user.converter.TokenResponseConverter;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.request.LoginRequestDTO;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.response.ResponseTokenDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.converter.TokenResponseConverter;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.request.LoginRequestDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.response.ResponseTokenDTO;
 import com.mgmetehan.userjwtsecurityexample2.user.model.User;
 import com.mgmetehan.userjwtsecurityexample2.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

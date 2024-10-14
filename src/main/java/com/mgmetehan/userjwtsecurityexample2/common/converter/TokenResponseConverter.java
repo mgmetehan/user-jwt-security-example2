@@ -1,7 +1,7 @@
-package com.mgmetehan.userjwtsecurityexample2.user.converter;
+package com.mgmetehan.userjwtsecurityexample2.common.converter;
 
 import com.mgmetehan.userjwtsecurityexample2.auth.model.Token;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.response.ResponseTokenDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.response.ResponseTokenDTO;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

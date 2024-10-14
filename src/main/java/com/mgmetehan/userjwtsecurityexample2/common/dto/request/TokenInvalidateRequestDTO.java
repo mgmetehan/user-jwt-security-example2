@@ -1,4 +1,4 @@
-package com.mgmetehan.userjwtsecurityexample2.user.dto.request;
+package com.mgmetehan.userjwtsecurityexample2.common.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

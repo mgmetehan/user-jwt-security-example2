@@ -2,7 +2,7 @@ package com.mgmetehan.userjwtsecurityexample2.user.service;
 
 import com.mgmetehan.userjwtsecurityexample2.auth.service.InvalidTokenService;
 import com.mgmetehan.userjwtsecurityexample2.auth.service.TokenService;
-import com.mgmetehan.userjwtsecurityexample2.user.dto.request.TokenInvalidateRequestDTO;
+import com.mgmetehan.userjwtsecurityexample2.common.dto.request.TokenInvalidateRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
